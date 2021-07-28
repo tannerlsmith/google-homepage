@@ -130,12 +130,9 @@ body {
     }
 }
 
-
-
-
-
-
-
+#data-container {
+    border: none;
+}
 @media screen and (max-width: 375px) {
     html, body, .container {
         width: 100%;

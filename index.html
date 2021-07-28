@@ -7,15 +7,14 @@
     <title>Not Google</title>
     <link rel="stylesheet" href="./sources/style/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="//db.onlinewebfonts.com/c/96092db40c3de99f4a5298fe02b82e27?family=Galano+Grotesque" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
     <div class="container">
         <nav class="navbar navbar-expand-md navbar bg">
             <div class="nav navbar-nav ml-auto">
-                <a class="nav-item nav-link" href="#">Email Me</a>
-                <a class="nav-item nav-link" href="#">Repo</a>
+                <a class="nav-item nav-link" href="mailto: tannerlucassmith@gmail.com">Gmail Me</a>
+                <a class="nav-item nav-link" href="https://github.com/tannerlsmith/google-homepage" target="_blank">Repository</a>
             </div>
         </nav>
         <div class="title">
@@ -31,20 +30,56 @@
             <span style="color:#DB4437">e</span>
         </div>
         <div class="search-bar-div">
-            <label class="type">
-                <input type="text" placeholder="Search.." class="google-it">
-                <button id="search-btn">
-                    Go
-                </button>
-            </label>
+            <form class="type">
+                <input name="city" id="city" type="text" autofocus="true" class="google-it search-city" placeholder="Search..."/>
+                <button type="submit" class="btn" id="search-btn">Go</button>
+            </form>
         </div>
         <div class="about-info">
             Enter a city to "google" the weather forecast.
         </div>
-    </div>
+    
+        <div class="col-lg-9 col-md-9 no-backgrnd">
+            <div class="row">
+                <div class="col-12">
 
-    <div class="">
+                </div>
+            </div>
+            <div class="row flex-row justify-content-around">
+                <div class="card" id="data-container" style="width: 18%">
+                    <p class="icon"></p>
+                    <p class="weather"></p>
+                    <p class="temp"></p>
+                </div>
+                
+                <div class="card" id="data-container" style="width: 18%">
+                    <p class="icon"></p>
+                    <p class="weather"></p>
+                    <p class="temp"></p>
+                </div>
+                
+                <div class="card" id="data-container" style="width: 18%">
+                    <p class="icon"></p>
+                    <p class="weather"></p>
+                    <p class="temp"></p>
+                </div>
+                
+                <div class="card" id="data-container" style="width: 18%">
+                    <p class="icon"></p>
+                    <p class="weather"></p>
+                    <p class="temp"></p>
+                </div>
+                
+                <div class="card" id="data-container" style="width: 18%">
+                    <img class="icon">
+                    <p class="weather"></p>
+                    <p class="temp"></p>
+                </div>
 
-    </div>
-</body>
+            </div>
+        </div>
+                        
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    </body>
 </html>
