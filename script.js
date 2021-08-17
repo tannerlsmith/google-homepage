@@ -25,9 +25,6 @@ $('btn').on('click', function (event) {
         // This adds the weather description.
         var weather = data.weather[0].main;
             
-            
-            
-            
         // puts the icon inside the icon element.
         $('.icon').attr('src', icon);
         // puts weather description inside weather element.
