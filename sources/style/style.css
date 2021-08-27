@@ -5,6 +5,8 @@
 html, body {
     margin: 0;
     padding: 0;
+    font-family: 'galano grotesque';
+
 }
 
 .navbar {
@@ -27,4 +29,8 @@ html, body {
     font-family: 'galano grotesque';
     font-size: 60px;
     text-shadow: 2.5px 2.5px 4px #000;
+}
+
+.enter-button {
+    border-radius: 4px;
 }
