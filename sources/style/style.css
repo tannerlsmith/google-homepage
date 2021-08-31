@@ -6,14 +6,12 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'galano grotesque';
-
 }
 
 .navbar {
     margin: 0;
     padding-top: 5px;
 }
-
 
 .center-items {
     align-items: center;
@@ -33,4 +31,9 @@ html, body {
 
 .enter-button {
     border-radius: 4px;
+}
+
+.jquery-img {
+    height: 55px;
+    width: 55px;
 }
