@@ -40,7 +40,6 @@ function getUVIndex(lat, lon) {
 }
 
 function fiveDayForecast(dailyForecast) {
-    console.log('This is a daily forecast', dailyForecast)
 
     for (i = 1; i < 6; i++) {
         let fiveDayEl = $('#day-' + i)
@@ -64,11 +63,16 @@ function fiveDayForecast(dailyForecast) {
 }
 
 function searchSection(city) {
-    var liEl = $('<li> </li>').html(city)
+    var liEl = $('<button id="city-btn">' + city + '</button>').html(city)
     searchesEl.append(liEl)
+    
+    
+    $(liEl).on('click', function (event) {
+        event.preventDefault();
+        // button works here
+        // I need to give buttons value so that when I click them, theychange to the city.
+        
+
+    })
 }
 
-
-
-// Date, Icon, Temp, Wind, Humidity
-// weather.[0].icon
