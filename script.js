@@ -63,16 +63,18 @@ function fiveDayForecast(dailyForecast) {
 }
 
 function searchSection(city) {
-    var liEl = $('<button id="city-btn">' + city + '</button>').html(city)
+    var liEl = $('<button id="city-btn" >' + city + '</button>').html(city).val(localStorage.user)
     searchesEl.append(liEl)
+
     
     
     $(liEl).on('click', function (event) {
         event.preventDefault();
-        // button works here
-        // I need to give buttons value so that when I click them, theychange to the city.
-        
+        console.log($(this).html(
 
-    })
+            // Here needs logic to pull API.
+        )
+    )}
+
+    )
 }
-
