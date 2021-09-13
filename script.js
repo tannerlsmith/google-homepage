@@ -18,6 +18,7 @@ $('.enter-button').on('click', function (event) {
         let lat = data.coord.lat
         let lon = data.coord.lon
         
+        
         currentTempEl.html('Temperature: ' + data.main.temp)
         currentHumidityEl.html('Humidity: ' + data.main.humidity + '%')
         currentIconEl.html(data.name + ' ' + date + ' <img src='+ currentIconLink+'> ')
@@ -60,21 +61,31 @@ function fiveDayForecast(dailyForecast) {
         
         fiveDayEl.append(dateEl, iconEl, tempEl, windEl, humidityEl)
     }
+    
+
+    
+    
 }
-
-function searchSection(city) {
-    var liEl = $('<button id="city-btn" >' + city + '</button>').html(city).val(localStorage.user)
-    searchesEl.append(liEl)
-
     
-    
-    $(liEl).on('click', function (event) {
-        event.preventDefault();
-        console.log($(this).html(
+    // Creates buttons for localstorage
+    function searchSection(city) {
+        var liEl = $('<button id="city-btn" >' + city + '</button>').html(city).val(localStorage.user)
+        searchesEl.append(liEl)
+        
+        
+        
+        $(liEl).on('click', function (event) {
+            event.preventDefault();
+            console.log($(this).html(
 
-            // Here needs logic to pull API.
+
+                
+            )
+                
+                
+                // Here needs logic to pull API.
+            )}
+                
         )
-    )}
-
-    )
-}
+    }
+    

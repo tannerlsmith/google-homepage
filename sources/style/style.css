@@ -29,6 +29,12 @@ html, body {
     text-shadow: 2.5px 2.5px 4px #000;
 }
 
+li {
+    list-style-type: none; 
+    margin-top: 10px; 
+    font-style: italic;
+}
+
 .enter-button {
     border-radius: 4px;
 }
@@ -44,11 +50,18 @@ html, body {
 
 #current-day-card {
     border: none;
-
+    background-color: #4285F4;
+    color: white;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    max-height: 280px;
 }
 
 #day-1, #day-2, #day-3, #day-4, #day-5 {
     border: none;
     background-color: #4285F4;
     color: white;
+    max-height: 280px;
+
 }
