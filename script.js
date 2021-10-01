@@ -21,7 +21,11 @@ function saveEvent(city) {
     recentSearches.push(city)
     localStorage.setItem('recentSearches', JSON.stringify(recentSearches))
     console.log(recentSearches)
+    // make storage persist
+    
 }
+
+// localstorage.getitem('recentSearches', JSON.parse(recentSearches))
 
 function getCurrentWeather(city) {
     $.getJSON("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apiKey + "&units=imperial", function (data) {
@@ -40,7 +44,7 @@ function getCurrentWeather(city) {
         currentWindEl.html('Wind speed: ' + data.wind.speed)
 
         getUVIndex(lat, lon)
-
+    
 
     })
 }
@@ -94,7 +98,8 @@ function searchSection(city) {
         // Here needs logic to pull API.
     })
     searchesEl.append(liEl)
+
+    localStorage.getItem('recentSearches', JSON.parse(recentSearches))
 }
 
-// make storage persist.
-// localstorage.getitem(recentSearches and parse.)
+// localStorage.getItem('recentSearches', JSON.parse(recentSearches))
